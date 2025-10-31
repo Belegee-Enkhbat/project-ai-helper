@@ -12,11 +12,13 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-  const projectDescription = `AI-powered project management tool.
-Features:
-- Task automation
-- Team collaboration
-- Analytics dashboard`;
+  const projectDescription = `Purpose
+  Provide a single place to run an AI-enabled social analytics and management platform:
+  Integration points for modern LLMs and image generation models for features like chat, content generation, agents, and embeddings.
+  what the code implements
+  Scheduled batch ingestion with Python Dockerized jobs
+  BigQuery ingestion and analytics, plus embedding generation and insertion.
+  Frontend: Nuxt 3 app with components for chat, dashboards, social features, and settings.`;
 
   const handleSearch = useCallback(() => {
     setIsLoading(true);
@@ -90,24 +92,30 @@ Features:
         <div className="space-y-6">
           <dl className="space-y-4">
             <div>
-              <dt className="text-sm font-medium text-slate-500 dark:text-slate-400">Project Name</dt>
-              <dd className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">AI-Powered Project Management Tool</dd>
+              <dt className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">Similar Projects</dt>
+              <dd className="mt-2 text-slate-600 dark:text-slate-400 leading-relaxed">Project Ai helper: Streamed real-time social data with Kafka, processed and clustered trends with Spark and fastText, then displayed analytics in a React dashboard.</dd>
             </div>
              <div className="border-t border-slate-200 dark:border-slate-700 pt-4">
-              <dt className="text-sm font-medium text-slate-500 dark:text-slate-400">Key Features</dt>
+              <dt className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">Recommended developer</dt>
               <dd className="mt-2 text-slate-700 dark:text-slate-300">
-                 <ul className="list-disc list-inside space-y-1">
-                    <li>Task automation</li>
-                    <li>Team collaboration</li>
-                    <li>Analytics dashboard</li>
-                 </ul>
+                 Puka:
+                 The system analyzes the search input using LLMs, and then performs a high-accuracy vectorized search across the ingested data. It efficiently retrieves Puka"s developer profile—highlighting his experience extracted from project codes and commit history—by matching the user"s requirements to Puka"s skills and project involvement stored in the vector database.
               </dd>
             </div>
              <div className="border-t border-slate-200 dark:border-slate-700 pt-4">
-              <dt className="text-sm font-medium text-slate-500 dark:text-slate-400">Project Summary</dt>
+              <dt className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">Recommended tech tools</dt>
               <dd className="mt-2 text-slate-600 dark:text-slate-400 leading-relaxed">
-                This project leverages AI to streamline project management by automating repetitive tasks, enhancing team collaboration, and providing actionable insights through an analytics dashboard.
+                OpenAI GPT-4 – State-of-the-art large language model for content creation, chat, and semantic analysis tasks.
               </dd>
+               <dd className="mt-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+Hugging Face Transformers – Popular open-source library supporting a wide range of pre-trained NLP models for embedding, classification, and generation.
+
+
+               </dd>
+                <dd className="mt-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+BigQuery – Google’s cloud data warehouse, essential for large-scale analytics and ML model integration.
+
+               </dd>
             </div>
           </dl>
         </div>
