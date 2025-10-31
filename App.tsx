@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import Modal from './components/Modal';
 import Spinner from './components/Spinner';
-
+import { Brain } from "lucide-react";
 const SearchIcon: React.FC = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
     <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
@@ -35,15 +35,16 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen font-sans text-slate-800 dark:text-slate-200 antialiased bg-gradient-to-br from-gray-50 to-gray-200 dark:from-slate-900 dark:to-slate-950">
       <header className="py-10 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent pb-2">
-            Intelligent Project Search
-          </h1>
-          <p className="mt-4 text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Leverage AI to find projects with matching features and descriptions instantly.
-          </p>
-        </div>
-      </header>
+  <div className="max-w-4xl mx-auto text-center">
+    <div className="flex items-center justify-center gap-3">
+      <img src="./lastddam.png" className="w-[250px] h-[250px] text-blue-600 dark:text-blue-400" />
+      <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent pb-2">
+        Intelligent Project AI Helper
+      </h1>
+    </div>
+
+  </div>
+</header>
 
       <main className="pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
